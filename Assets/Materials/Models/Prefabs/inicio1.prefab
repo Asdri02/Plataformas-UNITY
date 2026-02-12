@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8886500852062061520
+--- !u!1001 &1462408409961100061
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.15
+      value: 3.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.89
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.51291
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a0a6c6e5172e2c64283e78162a34e53a, type: 2}
     - target: {fileID: 919132149155446097, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
       propertyPath: m_Name
-      value: block-grass (1)
+      value: inicio1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
       propertyPath: m_Layer
@@ -70,20 +70,23 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8784133812402783641}
+      addedObject: {fileID: 7407225365650527403}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3836147186882138885}
   m_SourcePrefab: {fileID: 100100000, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
---- !u!1 &8616046484876476033 stripped
+--- !u!1 &1768486811078446668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b1f9848f84247e240bc5a46638d099f9, type: 3}
-  m_PrefabInstance: {fileID: 8886500852062061520}
+  m_PrefabInstance: {fileID: 1462408409961100061}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &8784133812402783641
+--- !u!65 &7407225365650527403
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8616046484876476033}
+  m_GameObject: {fileID: 1768486811078446668}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -98,3 +101,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.082125, y: 1, z: 1.082125}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!54 &3836147186882138885
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768486811078446668}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 118
+  m_CollisionDetection: 0
