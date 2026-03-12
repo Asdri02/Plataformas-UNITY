@@ -68,3 +68,42 @@ Jump buffer.
 Ajuste avanzado de gravedad para mejorar la sensación del salto.
 Organización limpia del proyecto y uso de prefabs.
 
+
+
+Práctica 2 – Ampliación del juego de plataformas en Unity
+Descripción del proyecto
+
+En esta segunda práctica he ampliado el juego de plataformas desarrollado en la práctica anterior añadiendo nuevas mecánicas para darle una estructura más completa al juego. El objetivo principal ha sido implementar un sistema de vidas, obstáculos que penalicen al jugador y una pantalla final cuando se completa el nivel.
+
+Sistema de gestión del juego
+
+Para controlar el estado general del juego implementé un GameManager que funciona como instancia única. Este script se encarga de gestionar el número de vidas del jugador y el conteo de monedas.
+Cuando el jugador pierde una vida se ejecuta el método LoseLife(), que reduce el contador de vidas y notifica el cambio mediante eventos. Si el número de vidas llega a cero, el nivel se reinicia automáticamente utilizando SceneManager.
+
+Obstáculos y zonas de daño
+
+Añadí varios obstáculos (spikeballs) colocados en el recorrido para evitar que el jugador pueda acortar el camino. Estos objetos detectan la colisión con el jugador mediante un collider.
+
+Cuando el jugador entra en contacto con uno de estos obstáculos:
+   pierde una vida
+   vuelve al punto de respawn
+   De esta forma se introduce una penalización que obliga al jugador a repetir parte del recorrido si falla un salto.
+
+Sistema de victoria
+
+Al final del recorrido coloqué un objeto con un trigger de victoria. Cuando el jugador lo atraviesa se carga una nueva escena llamada Victory, que funciona como pantalla final del juego.
+
+Pantalla final
+
+La escena de victoria contiene una interfaz con un mensaje indicando que el jugador ha ganado y dos botones:
+Reintentar, que vuelve a cargar el nivel.
+Menú,te lleva al menú del juego.
+
+Mejoras añadidas
+
+En esta práctica se añadieron varias mejoras respecto al proyecto inicial:
+   Sistema de vidas del jugador
+   GameManager para controlar el estado del juego
+   Obstáculos que hacen perder vidas
+   Sistema de respawn
+   Escena de victoria con interfaz básica
